@@ -27,6 +27,10 @@ tags:
 
 ​	由于众所周知的google服务访问的原因，在工程前端执行包安装过程中，在执行webdriver-manager update，命令时，由于无法访问google服务下载chorme的相关驱动，将导致后续进行e2e测试的失败。具体
 
+失败信息如下图所示。
+
+![img/webdriver-er.png]()
+
 
 
 ## （三）npm test 无法通过的问题
