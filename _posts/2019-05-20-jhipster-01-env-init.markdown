@@ -29,7 +29,11 @@ tags:
 
 ![webdriver-er](/img/webdriver-er.png)
 
+如图所示，在执行webdriver-manager update时，由于无法访问到相应地址，而导致失败。国内存在相应的镜像，但是webdriver-manager update的逻辑是先查询对应地址获得版本信息，基于本机的版本，自动选择安装包，而国内的镜像网站无法同原地址一样以xml格式提供对应的版本信息。因而我将需要安装的包以及版本信息文件上传至github上提供静态资源的访问。而相关地址的配置位置在工程路径下node_modules\protractor\node_modules\webdriver-manager\built\config.json(可能存在不同情况，在node_modules目录下搜索webdriver-manager即可)。
 
+修改下图标注位置即可（win10用户可直接使用我提供的路径）
+
+![config-webdriver](/img/config-webdriver.png)
 
 
 
