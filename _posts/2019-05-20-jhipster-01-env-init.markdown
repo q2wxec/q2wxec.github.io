@@ -23,15 +23,15 @@ tags:
 
 ## （二）webdriver-manager 无法upadte的问题
 
-​	由于众所周知的google服务访问的原因，在工程前端执行包安装过程中，在执行webdriver-manager update，命令时，由于无法访问google服务下载chorme的相关驱动，将导致后续进行e2e测试的失败。具体
+​	由于众所周知的google服务访问的原因，在工程前端执行包安装过程中，在执行**webdriver-manager update**，命令时，由于无法访问google服务下载chorme的相关驱动，将导致后续进行**e2e**测试的失败。具体
 
 失败信息如下图所示。
 
 ![webdriver-er](/img/webdriver-er.png)
 
-如图所示，在执行webdriver-manager update时，由于无法访问到相应地址，而导致失败。国内存在相应的镜像，但是webdriver-manager update的逻辑是先查询对应地址获得版本信息，基于本机的版本，自动选择安装包，而国内的镜像网站无法同原地址一样以xml格式提供对应的版本信息。因而我将需要安装的包以及版本信息文件上传至github上提供静态资源的访问。而相关地址的配置位置在工程路径下node_modules\protractor\node_modules\webdriver-manager\built\config.json(可能存在不同情况，在node_modules目录下搜索webdriver-manager即可)。
+如图所示，在执行**webdriver-manager update**时，由于无法访问到相应地址，而导致失败。国内存在相应的镜像，但是webdriver-manager update的逻辑是先查询对应地址获得版本信息，基于本机的版本，自动选择安装包，而国内的镜像网站无法同原地址一样以xml格式提供对应的版本信息。因而我将需要安装的包以及版本信息文件上传至github上提供静态资源的访问。而相关地址的配置位置在工程路径下**node_modules\protractor\node_modules\webdriver-manager\built\config.json**(可能存在不同情况，在node_modules目录下搜索webdriver-manager即可)。
 
-修改下图标注位置即可（win10用户可直接使用我提供的路径）
+修改下图标注位置即可（**win10用户可直接使用我提供的路径**）
 
 ![config-webdriver](/img/config-webdriver.png)
 
@@ -39,7 +39,13 @@ tags:
 
 ## （三）npm test 无法通过的问题
 
+​	由于初始化时，并未设置任何前端js的测试，因而执行 **mvn test -P prod**，进行测试时，执行到**npm test**命令时，将由于找不到任何测试而报错退出，如下图所示：
 
+![npmtest-er](/img/npmtest-er.png)
+
+规避这个问题，需要修改**package.json**文件，在**npm  test** 命令中加入 **--passWithNoTests** 配置参数，详见下图：
+
+![pack-test-change](/img/pack-test-change.png)
 
 
 
@@ -47,3 +53,4 @@ tags:
 
 ## （四）mvn 启动出现elasticsearch path.home 未配置的问题
 
+​		
