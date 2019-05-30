@@ -27,7 +27,7 @@ tags:
 
 失败信息如下图所示。
 
-![webdriver-er](img/webdriver-er.png)
+![webdriver-er](/img/webdriver-er.png)
 
 
 
