@@ -11,8 +11,6 @@ tags:
     - CookBook
 ---
 
-@[TOC](本文目录)
-
 
 
 # Jhipster系列-01,CookBook案例环境初始化踩坑指南
@@ -29,7 +27,7 @@ tags:
 
 失败信息如下图所示。
 
-![img/webdriver-er.png]()
+![Alt](../img/webdriver-er.png)
 
 
 
