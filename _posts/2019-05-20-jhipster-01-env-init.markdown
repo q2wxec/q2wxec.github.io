@@ -53,4 +53,11 @@ tags:
 
 ## （四）mvn 启动出现elasticsearch path.home 未配置的问题
 
-​		
+​		使用**mvn**命令直接启动整个项目，项目总是出现下图异常
+
+​	![pack-test-change](/img/mvn-er.png)
+
+​		可是，在**springboot**配置文件中**application-dev.yml**已经进行了相关变量的配置，经过分析，mvn启动了**springboot：run**命令，而对应的plugin必须配置相关的profile才会主动读取相关的配置，而不会通过**applicaition.yml**中**spring.profiles.active**实现自动配置。因而如下图在启动plugin中添加对应profile解决问题。
+
+![mvn-solve](/img/mvn-solve.png)
+
