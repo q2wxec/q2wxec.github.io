@@ -4,7 +4,7 @@ title:      "Mysql读书笔记"
 subtitle:   "Mysql,架构,极客时间"
 date:       2020-10-14
 author:     "fxx"
-header-img: "img/jhipster-head.png"
+header-img: "img/mysql-head.jpg"
 tags:
     - Mysql
     - 丁奇专栏
