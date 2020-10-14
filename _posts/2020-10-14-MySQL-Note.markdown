@@ -13,6 +13,10 @@ tags:
 
 # MySQL 
 
+
+
+![xmind-总结构脑图](/img/MySQL_xmind.png)
+
 ##  Server 层
 
 ### 连接器
