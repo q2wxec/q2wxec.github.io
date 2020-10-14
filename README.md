@@ -1,9 +1,5 @@
-# HuxBlog Boilerplate
+# FXXBlog
 
-##### This is the boilerplate of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), all documents is over there!
+##### This is FROM [Fxx Blog](https://github.com/q2wxec)
 
-#### [View Boilerplate &rarr;](http://huangxuan.me/huxblog-boilerplate/)
-
-#### [View Live Hux Blog &rarr;](http://huangxuan.me)
-
-## If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) instead of this! Thank you!
+## If you like Fxx Blog, Please star [FXX](https://github.com/q2wxec/q2wxec.github.io) 
